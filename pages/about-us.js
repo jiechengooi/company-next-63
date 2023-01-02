@@ -3,7 +3,7 @@ import Layout from '../components/Layout'
 
 export default function AboutUsPage() {
   return (
-    <Layout title={'WIG | About Us'}>
+    <Layout title={'About Us'}>
       {/* Hero */}
       <div className="bg-blue-200 lg:relative lg:h-screen">
         <div className="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">

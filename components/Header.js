@@ -15,22 +15,18 @@ import {
 
 const navigation = [
   {
-    name: 'Main',
+    name: 'Contribute',
     icon: DocumentIcon,
     current: false,
     children: [
 
       {
-        name: 'Guaranteed Issue Whole Life Insurance',
-        href: '/insurance/guaranteed',
+        name: 'Volunteer',
+        href: '/volunteer',
       },
       {
-        name: 'Mortgage Protection',
-        href: '/insurance/mortgage-protection',
-      },
-      {
-        name: 'All Policies',
-        href: '/insurance/policies',
+        name: 'Donate',
+        href: '/donate',
       },
     ],
   },
@@ -45,11 +41,18 @@ const nav2 = [
     children: [{ href: '#' }],
   },
   {
-    name: 'Employee Benefits',
+    name: 'About us',
     icon: UserIcon,
-    href: '/employee',
+    href: '/about',
     current: false,
-    children: [{ href: '/employee' }],
+    children: [{ href: '/about' }],
+  },
+  {
+    name: 'Contact us',
+    icon: GlobeIcon,
+    href: '/contact',
+    current: false,
+    children: [{ href: '/contact' }],
   },
 ]
 
@@ -88,31 +91,20 @@ export default function Header() {
                     <a>
                       <img
                         className='block lg:hidden h-12 w-auto'
-                        src='/images/wig-logo.png'
-                        alt='WealthGuard Logo'
+                        src='/images/logo.png'
+                        alt='Volunteer Logo'
                       />
 
                       <img
                         className='hidden lg:block h-12 w-auto'
-                        src='/images/wig-logo-full.svg'
-                        alt='WealthGuard Logo'
+                        src='/images/logo-full.png'
+                        alt='Volunteer Logo'
                       />
                     </a>
                   </Link>
                 </div>
                 <div className='hidden md:ml-6 md:flex md:space-x-8'>
                   <HeaderNav />
-                </div>
-              </div>
-              <div className='flex items-center'>
-                <div className='flex-shrink-0'>
-                  <Link legacyBehavior href='/estimate' passHref>
-                    <button
-                      type='button'
-                      className='relative inline-flex items-center px-4 py-2 border border-transparent text-xs lg:text-sm font-medium rounded text-white bg-blue-600 shadow-sm hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500'>
-                      <span>Quote Term Life Now</span>
-                    </button>
-                  </Link>
                 </div>
               </div>
             </div>

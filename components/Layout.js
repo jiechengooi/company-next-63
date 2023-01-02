@@ -27,8 +27,8 @@ export default function Layout({ title, keywords, description, children }) {
 }
 
 Layout.defaultProps = {
-  title: 'WIG | Affordable Life Insurance',
+  title: 'Volunteer in malaysia',
   keywords:
-    'WealthGuard, WIG, Insurance, Life Insurance, Insurance Quotes, Small Business Insurance',
-  description: 'WealthGuard Life Insurance, get an instant quote today!.',
+    'volunteer in the country',
+  description: '',
 }

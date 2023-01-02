@@ -4,7 +4,7 @@ import { PhoneIcon } from '@heroicons/react/outline'
 
 export default function VolunteerPage() {
   return (
-    <Layout title={'WIG | Annuities'}>
+    <Layout title={'Volunteer'}>
       <div className='bg-blue-200 lg:relative'>
         <div className='mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left'>
           <div className='px-4 lg:w-1/2 sm:px-8 xl:pr-16'>

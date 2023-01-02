@@ -1,15 +1,7 @@
 import Link from 'next/link'
 
 const navigation = {
-  resources: [
-    { name: 'All Policies', href: '/insurance/policies' },
-    { name: 'Coverage Estimate', href: '/estimate' },
-  ],
-  company: [{ name: 'Contact', href: '/contact-us' }],
-  legal: [
-    { name: 'Privacy', href: '#' },
-    { name: 'Terms', href: '#' },
-  ],
+
   social: [
     {
       name: 'Facebook',
@@ -75,80 +67,18 @@ export default function Footer() {
               <a>
                 <img
                   className='h-12'
-                  src='/images/wig-logo-full-dark.svg'
-                  alt='WealthGuard Logo'
+                  src='/images/logo.png'
+                  alt='Logo'
                 />
               </a>
             </Link>
 
             <p className='text-gray-500 text-base'>
-              Life is uncertain. People are not. Our life insurance will always
-              be there for you when you need it most.
+              We have a great mission in helping the society. We are volunteer Malaysia
             </p>
-            {/* <div className="flex space-x-10">
-              {navigation.social.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-gray-400 hover:text-blue-500">
-                  <span className="sr-only">{item.name}</span>
-                  <item.icon className="h-6 w-6" aria-hidden="true" />
-                </a>
-              ))}
-            </div> */}
           </div>
           <div className='mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2'>
             <div className='md:grid md:grid-cols-2 md:gap-8'>
-              <div>
-                <h3 className='text-sm font-semibold text-gray-400 tracking-wider uppercase'>
-                  Resources
-                </h3>
-                <ul role='list' className='mt-4 space-y-4'>
-                  {navigation.resources.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className='text-base text-gray-500 hover:text-blue-500'>
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className='mt-12 md:mt-0'>
-                <h3 className='text-sm font-semibold text-gray-400 tracking-wider uppercase'>
-                  Company
-                </h3>
-                <ul role='list' className='mt-4 space-y-4'>
-                  {navigation.company.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className='text-base text-gray-500 hover:text-blue-500'>
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-            <div className='md:grid md:grid-cols-2 md:gap-8'>
-              <div>
-                <h3 className='text-sm font-semibold text-gray-400 tracking-wider uppercase'>
-                  Legal
-                </h3>
-                <ul role='list' className='mt-4 space-y-4'>
-                  {navigation.legal.map((item) => (
-                    <li key={item.name}>
-                      <a
-                        href={item.href}
-                        className='text-base text-gray-500 hover:text-blue-500'>
-                        {item.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
               <div className='mt-20 md:mt-0'>
                 <h3 className='text-sm font-semibold text-gray-400 tracking-wider uppercase'>
                   Contact Us
@@ -157,20 +87,20 @@ export default function Footer() {
                   <li>
                     <dl className='text-base text-gray-500'>
                       <div>
-                        <dt className='sr-only'>Postal address</dt>
+                        <dt className='sr-only'>Address</dt>
                         <dd>
-                          <p className='text-sm'>7205 FM 1488 Rd, Ste-A</p>
-                          <p className='text-sm'>Magnolia, TX 77354</p>
+                          <p className='text-sm'>Happy Town, Pulau Pinang,</p>
+                          <p className='text-sm'>Malaysia</p>
                         </dd>
                       </div>
                       <div className='mt-6'>
                         <dt className='sr-only'>Phone number</dt>
                         <dd className='flex'>
                           <a
-                            href='tel:832-930-3827'
+                            href='tel:60123456789'
                             target='_blank'
                             rel='noreferrer'>
-                            <span className=' text-sm'>832-930-3827</span>
+                            <span className=' text-sm'>+60123456789</span>
                           </a>
                         </dd>
                       </div>
@@ -182,7 +112,7 @@ export default function Footer() {
                               href='mailto:service@wealthguardig.com'
                               target='_blank'
                               rel='noreferrer'>
-                              service@wealthguardig.com
+                              info@gmail.com
                             </a>
                           </span>
                         </dd>
@@ -196,7 +126,7 @@ export default function Footer() {
         </div>
         <div className='mt-12 border-t border-gray-200 pt-8'>
           <p className='text-base text-gray-400 xl:text-center'>
-            &copy; 2021 WealthGuard Insurance Group - All rights reserved.
+            2021@All rights reserved. Developed by cheng jie
           </p>
         </div>
       </div>

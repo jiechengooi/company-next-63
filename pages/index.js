@@ -14,17 +14,11 @@ const perks = [
       'You can contribute goods to support those in needs.',
   },
   {
-    name: 'Donate Monetary',
+    name: 'Money',
     imageSrc: '/images/money.jpg',
     description:
       'You can support our mission in the monetary form.',
   },
-  {
-    name: 'Volunteer',
-    imageSrc: '/images/volunteer.jpg',
-    description:
-      'You can volunteer if you want.',
-  }
 ]
 
 const faqs = [
@@ -55,28 +49,17 @@ export default function HomePage() {
           <div className='px-4 lg:w-1/2 sm:px-8 xl:pr-16'>
             <h1 className='text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl'>
               <span className='block xl:inline'>Volunteer</span>{' '}
-              <span className='block text-blue-600 xl:inline'>at Malaysia Now</span>
+              <span className='block text-green-600 xl:inline'>at Malaysia Now</span>
             </h1>
             <p className='mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl'>
-              Contribute your time and effort to those who need.
+              Think about spending your time in more useful way? Wanna to know more people while doing humanitatian work? Perhaps can sonsider to contribute your time and effort to those who need. 
             </p>
-            <div className='mt-10 sm:flex sm:justify-center lg:justify-start'>
-
-              <div className='mt-3 rounded-md shadow sm:mt-0 sm:ml-3'>
-                <a
-                  href='tel:832-930-3827'
-                  className='w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-gray-50 md:py-4 md:text-lg md:px-10'>
-                  <PhoneIcon
-                    className='-ml-0.5 mr-2 h-6 w-6'
-                    aria-hidden='true'
-                  />
-                  Call Now
-                </a>
-              </div>
-            </div>
+            <p className='mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl'>
+              We at Volunteer Malaysia always looking for volunteer in joining us in our activities. 
+            </p>
           </div>
         </div>
-        <div className='relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full'>
+        <div className='relative w-full h-44 sm:h-52 md:h-76 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full'>
           <img
             className='absolute inset-0 w-full h-full object-cover'
             src='https://images.unsplash.com/photo-1531983412531-1f49a365ffed?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80'
@@ -85,7 +68,6 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Kim Section */}
 
       <div className='relative py-16 bg-white'>
         <div
@@ -200,13 +182,11 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Why WIG */}
       <div className='bg-gray-50'>
-        <h2 className='sr-only'>Why us?</h2>
         <div className='max-w-7xl mx-auto py-24 sm:px-2 sm:py-32 lg:px-4'>
           <div className='max-w-3xl'>
             <h2 className='text-4xl font-extrabold tracking-tight text-gray-900 mb-6 pl-8'>
-              Donation
+              Things you can contribute
             </h2>
           </div>
           <div className='max-w-2xl mx-auto px-4 grid grid-cols-1 gap-y-12 gap-x-8 lg:max-w-none lg:grid-cols-2 lg:gap-y-16'>
@@ -214,7 +194,7 @@ export default function HomePage() {
               <div key={perk.name} className='sm:flex'>
                 <div className='sm:flex-shrink-0'>
                   <div className='flow-root'>
-                    <img className='w-24 h-24' src={perk.imageSrc} alt='' />
+                    <img className='w-48 h-48' src={perk.imageSrc} alt='' />
                   </div>
                 </div>
                 <div className='mt-3 sm:mt-0 sm:ml-3'>
@@ -236,7 +216,7 @@ export default function HomePage() {
         <div className='relative h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2'>
           <img
             className='w-full h-full object-cover'
-            src='/images/volunteer1.jpg'
+            src='/images/support.jpg'
             alt=''
           />
           <div
@@ -244,19 +224,17 @@ export default function HomePage() {
             className='absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-300 mix-blend-multiply'
           />
         </div>
-        <div className='relative mx-auto max-w-md px-4 py-12 sm:max-w-7xl sm:px-6 sm:py-20 md:py-28 lg:px-8 lg:py-32'>
+        <div className='relative mx-auto max-w-md px-4 py-10 sm:max-w-7xl sm:px-6 sm:py-15 md:py-20 lg:px-8 lg:py-25'>
           <div className='md:ml-auto md:w-1/2 md:pl-10'>
             <p className='mt-2 text-gray-900 text-3xl font-extrabold tracking-tight sm:text-4xl'>
-              How It works
+              Technical Support
             </p>
             <p className='mt-3 text-lg text-gray-700'>
-              Here at <strong>WealthGuard Insurance Group</strong>, we take
-              pride in providing a faster, better, and easier life insurance
-              experience for you and your loved ones.
+              At the moment we are looking for IT expert in our volunteer center. We dont have technical people in helping us to maintain our electronic items and web application. Most of our present volunteer are not from science or engineering background. If you are someone with IT or engineering background, we will be plesed to have you in our big family. 
             </p>
             <div className='mt-8'>
               <div className='inline-flex rounded-md shadow'>
-                <Link legacyBehavior href='/how-it-works'>
+                <Link legacyBehavior href='/X'>
                   <a className='inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-blue-50'>
                     Learn more
                     <ExternalLinkIcon
@@ -271,81 +249,45 @@ export default function HomePage() {
         </div>
       </div>
 
-      {/* Check My Price Section */}
-      <div className='relative my-20'>
-        <div className='lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:gap-24 lg:items-start'>
-          <div className='relative sm:py-16 lg:py-0'>
-            <div
-              aria-hidden='true'
-              className='hidden sm:block lg:absolute lg:inset-y-0 lg:right-0 lg:w-screen'>
-              <div className='absolute inset-y-0 right-1/2 w-full bg-blue-50 rounded-r-3xl lg:right-72' />
-              <svg
-                className='absolute top-8 left-1/2 -ml-3 lg:-right-8 lg:left-auto lg:top-12'
-                width={404}
-                height={392}
-                fill='none'
-                viewBox='0 0 404 392'>
-                <defs>
-                  <pattern
-                    id='02f20b47-fd69-4224-a62a-4c9de5c763f7'
-                    x={0}
-                    y={0}
-                    width={20}
-                    height={20}
-                    patternUnits='userSpaceOnUse'>
-                    <rect
-                      x={0}
-                      y={0}
-                      width={4}
-                      height={4}
-                      className='text-gray-200'
-                      fill='currentColor'
+
+      <div className='space-y-10 lg:space-y-10 relative bg-gray-50'>
+        <div className='relative h-56 bg-indigo-600 sm:h-72 md:absolute md:left-0 md:h-full md:w-1/2'>
+          <img
+            className='w-full h-full object-cover'
+            src='/images/volunteer1.jpg'
+            alt=''
+          />
+          <div
+            aria-hidden='true'
+            className='absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-300 mix-blend-multiply'
+          />
+        </div>
+        <div className='relative mx-auto max-w-md px-4 py-10 sm:max-w-7xl sm:px-6 sm:py-15 md:py-20 lg:px-8 lg:py-25'>
+          <div className='md:ml-auto md:w-1/2 md:pl-10'>
+            <p className='mt-2 text-gray-900 text-3xl font-extrabold tracking-tight sm:text-4xl'>
+              Social work
+            </p>
+            <p className='mt-3 text-lg text-gray-700'>
+              Our volunteer pay a regular visit to the orphanage and old folks home. We assist them on various aspect. Our volunteer help them by providing counselling, cooking and anything required our effort. At the moment we are lacking of 5 people in weekend volunteering program. This program is open for anyone above 21 years old as some of the activity required adults work.
+            </p>
+            <div className='mt-8'>
+              <div className='inline-flex rounded-md shadow'>
+                <Link legacyBehavior href='/volunteer'>
+                  <a className='inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-white hover:bg-blue-50'>
+                    Learn more
+                    <ExternalLinkIcon
+                      className='-mr-1 ml-3 h-5 w-5 text-gray-400'
+                      aria-hidden='true'
                     />
-                  </pattern>
-                </defs>
-                <rect
-                  width={404}
-                  height={392}
-                  fill='url(#02f20b47-fd69-4224-a62a-4c9de5c763f7)'
-                />
-              </svg>
-            </div>
-            <div className='relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0 lg:max-w-none lg:py-20'>
-              {/* Testimonial card*/}
-              <div className='relative pt-64 pb-10 rounded-2xl shadow-xl overflow-hidden'>
-                <img
-                  className='absolute inset-0 h-full w-full object-cover'
-                  src='/images/volunteer2.jpg'
-                  alt=''
-                />
-                <div className='absolute inset-0 bg-blue-500 mix-blend-multiply' />
-                <div className='absolute inset-0 bg-gradient-to-t from-pink-600 via-pink-600 opacity-30' />
-              </div>
-            </div>
-          </div>
-
-          <div className='relative mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-0'>
-            {/* Content area */}
-            <div className='pt-12 sm:pt-16 lg:pt-32'>
-              <h2 className='text-3xl text-gray-900 font-extrabold tracking-tight sm:text-4xl'>
-                Rest easy knowing you&apos;re safe
-              </h2>
-              <div className='mt-6 text-gray-500 space-y-6'>
-                <p className='text-lg'>
-                  In little to no time, you could qualify for a policy that
-                  could provide assistance for generations and help keep those
-                  you love <strong>safe</strong>.
-                </p>
-              </div>
-              <div className='py-8'>
-                <div className='inline-flex rounded-md shadow float-right'>
-
-                </div>
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+
 
       {/* FAQs */}
       <div className='bg-white'>
@@ -378,14 +320,14 @@ export default function HomePage() {
       <div className='bg-blue-50 mb-12 md:mb-16'>
         <div className='max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-8 lg:flex lg:items-center lg:justify-between'>
           <h2 className='text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl'>
-            <span className='block'>Ready to learn more?</span>
-            <span className='block text-blue-600'>See our policies.</span>
+            <span className='block'>Wanna join us?</span>
+            <span className='block text-blue-600'>Fill in the google form, and we will keep in touch with you.</span>
           </h2>
           <div className='mt-8 flex lg:mt-0 lg:flex-shrink-0'>
             <div className='inline-flex rounded-md shadow'>
-              <Link legacyBehavior href='/insurance/policies'>
-                <a className='inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700'>
-                  Learn more
+              <Link legacyBehavior href='/f'>
+                <a className='inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-blue-700'>
+                  Click here
                 </a>
               </Link>
             </div>
